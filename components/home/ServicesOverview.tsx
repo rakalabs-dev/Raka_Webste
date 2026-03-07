@@ -58,6 +58,21 @@ const slideUp: Variants = {
 const ServicesOverview = () => {
   const services = [
     {
+      title: "Full Stack Web Solutions",
+      description: (
+        <>
+          Build high-performance business websites and web apps that improve user experience and increase conversions by{" "}
+          <span className="font-semibold text-red-500">40%+</span>.
+        </>
+      ),
+      icon: (
+        <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+        </svg>
+      ),
+      href: "/services",
+    },
+    {
       title: "Business Automation",
       description: (
         <>
@@ -103,6 +118,27 @@ const ServicesOverview = () => {
       href: "/services",
     },
     {
+      title: "Digital Marketing & SEO",
+      description: (
+        <>
+          Increase online visibility and generate more qualified leads with data-driven SEO and digital marketing strategies proven to boost traffic by{" "}
+          <span className="font-semibold text-red-500">50%+</span>.
+        </>
+      ),
+      icon: (
+        <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            strokeWidth={2}
+            d="M11 4a7 7 0 017 7c0 1.657-.672 3.157-1.757 4.243L20 19l-1 1-3.757-3.757A6.978 6.978 0 0111 18a7 7 0 110-14z"
+          />
+        </svg>
+      ),
+      href: "/digital-marketing",
+    },
+
+    {
       title: "AI Integration",
       description: (
         <>
@@ -114,22 +150,10 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
         </svg>
       ),
-      href: "/ai-integration",
+      href: "/services",
     },
-    {
-      title: "Workflow Automation",
-      description: (
-        <>
-          Increase productivity by <span className="font-semibold text-red-500">50%+</span> while reducing operational delays.
-        </>
-      ),
-      icon: (
-        <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 7h16M4 12h10M4 17h16" />
-        </svg>
-      ),
-      href: "/workflow-automation",
-    },
+
+
   ];
 
   return (
@@ -177,7 +201,7 @@ const ServicesOverview = () => {
                   shadow-[10px_0_20px_rgba(255,0,0,0.3),-10px_0_20px_rgba(255,0,0,0.3)] 
                   hover:shadow-[10px_0_25px_rgba(255,0,0,0.5),-10px_0_25px_rgba(255,0,0,0.5)] 
                   transform hover:scale-105 
-                  transition duration-300 cursor-pointer
+                  transition duration-200
                 ">
                   <div className="w-12 h-12 bg-blue-100 flex items-center justify-center mb-6">
                     {service.icon}

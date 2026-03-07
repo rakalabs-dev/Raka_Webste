@@ -11,8 +11,8 @@ const testimonials = [
       "Ricilix streamlined our inventory and order management processes. Our operations are now faster and far more efficient.",
   },
   {
-    company: "Revcharge",
-    description: "EV charger sales and distribution company",
+    company: "",
+    description: "Charger sales and distribution company",
     rating: 4,
     review:
       "With Ricilix automation and AI integrations, we improved customer inquiries handling and boosted our sales workflow.",

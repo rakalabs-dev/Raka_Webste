@@ -1,17 +1,19 @@
 const ServicesHero = () => {
-    return (
-      <section className="py-16 md:py-24 bg-gradient-to-br from-blue-50 to-purple-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl leading-tight tracking-tight text-purple-800 mb-6">
-            Solutions That Drive Real Business Results
-          </h1>
-          <p className="text-lg md:text-xl text-neutral-600 max-w-3xl mx-auto">
-            We don't just implement technology—we transform how your business operates, 
-            helping you scale faster and work smarter.
-          </p>
-        </div>
-      </section>
-    );
-  };
-  
-  export default ServicesHero;
+  return (
+    <section className="py-16 md:py-24 bg-black">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16 text-center">
+        <h1 className="font-heading font-bold text-4xl md:text-5xl leading-tight tracking-tight text-white mb-6">
+          Technology <span className="font-heading font-semibold text-red-500">Solutions</span>{" "} That Help Your Business Grow <span className="font-heading font-semibold text-red-500">Faster</span>{" "}
+        </h1>
+
+        <p className="text-lg md:text-xl text-neutral-300 max-w-3xl mx-auto">
+          From powerful web platforms to intelligent automation and AI assistant, AI integration,
+          we build digital systems that increase efficiency, attract more customers,
+          and help your business scale with confidence.
+        </p>
+      </div>
+    </section>
+  );
+};
+
+export default ServicesHero;

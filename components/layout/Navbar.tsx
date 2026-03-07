@@ -50,8 +50,8 @@ const Navbar = () => {
     const navLinks = [
         { href: '/', label: 'Home' },
         { href: '/about', label: 'About' },
-        { href: '/portfolio', label: 'Portfolio' },
         { href: '/services', label: 'Services' },
+        { href: '/portfolio', label: 'Portfolio' },
         { href: '/contact', label: 'Contact' },
     ];
 
@@ -107,7 +107,7 @@ const Navbar = () => {
                                     onClick={() => router.push('/contact')}
                                     className="bg-red-600 font-bold text-white 
                                     px-6 py-2 rounded-lg hover:bg-red-700 transition">
-                                    Get a Quote
+                                    Contact Us
                                 </button>
                             </div>
 

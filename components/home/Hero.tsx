@@ -57,7 +57,7 @@ const slideInRight: Variants = {
 const Hero = () => {
   return (
     <section className="relative  py-4 md:py-8 xl:py-10">
-        {/* Sphere Background */}
+      {/* Sphere Background */}
 
       <div className=" relative z-20  max-w-7xl xl:max-w-none md:py-6 py-4 mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24">
 
@@ -94,8 +94,8 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link href="/contact">
-                <button className="bg-red-700 font-bold text-gray-100 px-8 py-3 rounded-lg hover:bg-red-600 transition shadow-custom">
-                  Get a Quote
+                <button className="bg-red-700 cursor-pointer font-bold text-gray-100 px-8 py-3 rounded-lg hover:bg-red-600 transition shadow-custom">
+                  Lets Start Now →
                 </button>
               </Link>
             </motion.div>
@@ -103,36 +103,36 @@ const Hero = () => {
 
           {/* ================= IMAGE SECTION ================= */}
           <motion.div
-  variants={slideInRight}
-  initial="hidden"
-  whileInView="visible"
-  viewport={{ once: true, amount: 0.3 }}
-  className="relative h-[320px] md:h-[380px] xl:h-[420px] w-full
+            variants={slideInRight}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true, amount: 0.3 }}
+            className="relative h-[320px] md:h-[380px] xl:h-[420px] w-full
              rounded-xl
              shadow-[8px_10px_25px_rgba(255,0,0,0.4)]  // red shadow
              bg-black/40" // semi-transparent overlay to see behind
->
-  <Image
-    src="/pictures/HomePage/Home1.jpeg"
-    alt="Business Automation"
-    fill
-    className="rounded-xl object-cover opacity-90" // slightly transparent
-    priority
-  />
-</motion.div>
+          >
+            <Image
+              src="/pictures/HomePage/Home1.jpeg"
+              alt="Business Automation"
+              fill
+              className="rounded-xl object-cover opacity-90" // slightly transparent
+              priority
+            />
+          </motion.div>
         </div><div className="w-full flex justify-center items-center mt-10">
-  <div className="relative bg-black/40 lg:w-2/3 backdrop-blur-md border border-red-500 shadow-lg rounded-2xl p-5 md:p-8">
-    
-    {/* ================= LOGO ================= */}
-    <motion.div
-      className="m-4 md:m-6 flex justify-center"
-      variants={slideInLeft}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-    >
-      <div
-        className="
+          <div className="relative bg-black/40 lg:w-2/3 backdrop-blur-md border border-red-500 shadow-lg rounded-2xl p-5 md:p-8">
+
+            {/* ================= LOGO ================= */}
+            <motion.div
+              className="m-4 md:m-6 flex justify-center"
+              variants={slideInLeft}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <div
+                className="
           relative
           w-[220px] h-[95px]
           sm:w-[260px] sm:h-[115px]
@@ -141,38 +141,38 @@ const Hero = () => {
           xl:w-[560px] xl:h-[240px]
           2xl:w-[620px] 2xl:h-[260px]
         "
-      >
-        <Image
-          src="/pictures/HomePage/R logo.png"
-          alt="Ricilix Logo"
-          fill
-          className="object-contain"
-          priority
-        />
-      </div>
-    </motion.div>
+              >
+                <Image
+                  src="/pictures/HomePage/R logo.png"
+                  alt="Ricilix Logo"
+                  fill
+                  className="object-contain"
+                  priority
+                />
+              </div>
+            </motion.div>
 
-    {/* ================= STATS ================= */}
-    <motion.div
-      className="mt-4 text-center"
-      variants={containerVariants}
-      initial="hidden"
-      whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
-    >
-      <motion.p
-        variants={slideInLeft}
-        className="text-sm md:text-base text-gray-300 font-medium"
-      >
-        <span className="font-heading font-semibold text-red-500">60%</span>{" "}
-        Less Manual Work •{" "}
-        <span className="font-heading font-semibold text-red-500">40%</span>{" "}
-        Better Pipeline Visibility •{" "}
-        <span className="font-heading font-semibold text-red-500">2× Faster Operations</span>
-      </motion.p>
-    </motion.div>
-  </div>
-</div>
+            {/* ================= STATS ================= */}
+            <motion.div
+              className="mt-4 text-center"
+              variants={containerVariants}
+              initial="hidden"
+              whileInView="visible"
+              viewport={{ once: true, amount: 0.3 }}
+            >
+              <motion.p
+                variants={slideInLeft}
+                className="text-sm md:text-base text-gray-300 font-medium"
+              >
+                <span className="font-heading font-semibold text-red-500">60%</span>{" "}
+                Less Manual Work •{" "}
+                <span className="font-heading font-semibold text-red-500">40%</span>{" "}
+                Better Pipeline Visibility •{" "}
+                <span className="font-heading font-semibold text-red-500">2× Faster Operations</span>
+              </motion.p>
+            </motion.div>
+          </div>
+        </div>
 
       </div>
 
