@@ -76,8 +76,7 @@ const ServicesOverview = () => {
       title: "Business Automation",
       description: (
         <>
-          Reduce manual work by up to <span className="font-semibold text-red-500">60%</span> and
-          streamline daily operations with automated workflows designed to save time and lower operational costs.
+          Reduce manual work by up to <span className="font-semibold text-red-500">60%</span> and streamline daily operations with automated workflows.
         </>
       ),
       icon: (
@@ -91,13 +90,13 @@ const ServicesOverview = () => {
       title: "CRM Optimization",
       description: (
         <>
-          Increase customer retention and sales visibility with structured CRM systems proven to improve pipeline efficiency by{" "}
+          Increase customer retention and sales visibility with structured CRM systems improving pipeline efficiency by{" "}
           <span className="font-semibold text-red-500">30%-40%</span>.
         </>
       ),
       icon: (
         <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10m-6 0a2 2 0 002 2h2a2 2 0 002-2" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10" />
         </svg>
       ),
       href: "/services",
@@ -106,7 +105,7 @@ const ServicesOverview = () => {
       title: "AI Chatbots for Business",
       description: (
         <>
-          Provide instant customer support and lead qualification 24/7 and reduce response time by up to{" "}
+          Provide instant customer support and lead qualification 24/7 and reduce response time by{" "}
           <span className="font-semibold text-red-500">70%</span>.
         </>
       ),
@@ -121,23 +120,17 @@ const ServicesOverview = () => {
       title: "Digital Marketing & SEO",
       description: (
         <>
-          Increase online visibility and generate more qualified leads with data-driven SEO and digital marketing strategies proven to boost traffic by{" "}
+          Increase online visibility and generate more qualified leads with data-driven SEO strategies boosting traffic by{" "}
           <span className="font-semibold text-red-500">50%+</span>.
         </>
       ),
       icon: (
         <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path
-            strokeLinecap="round"
-            strokeLinejoin="round"
-            strokeWidth={2}
-            d="M11 4a7 7 0 017 7c0 1.657-.672 3.157-1.757 4.243L20 19l-1 1-3.757-3.757A6.978 6.978 0 0111 18a7 7 0 110-14z"
-          />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a7 7 0 017 7c0 1.657-.672 3.157-1.757 4.243L20 19l-1 1-3.757-3.757A6.978 6.978 0 0111 18a7 7 0 110-14z" />
         </svg>
       ),
       href: "/digital-marketing",
     },
-
     {
       title: "AI Integration",
       description: (
@@ -147,19 +140,18 @@ const ServicesOverview = () => {
       ),
       icon: (
         <svg className="w-6 h-6 text-red-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3" />
         </svg>
       ),
       href: "/services",
     },
-
-
   ];
 
   return (
     <section className="py-16 md:py-20 relative">
-      <div className="max-w-8xl mx-4 px-4 sm:px-6 lg:px-8 border border-red-200 rounded-lg py-6 px-3 lg:px-6  bg-gray-900/60">
-        {/* ================= HEADING SECTION ================= */}
+      <div className="max-w-8xl mx-4 px-4 sm:px-6 lg:px-8 border border-red-200 rounded-lg py-6 px-3 lg:px-6 bg-gray-900/60">
+
+        {/* ================= HEADING ================= */}
         <motion.div
           className="text-center mb-12"
           variants={leftContainer}
@@ -178,11 +170,11 @@ const ServicesOverview = () => {
             variants={slideLeft}
             className="text-xl text-neutral-200 max-w-2xl mx-auto"
           >
-            We solve real operational challenges with technology that works for your business, not against it.
+            We solve real operational challenges with technology that works for your business.
           </motion.p>
         </motion.div>
 
-        {/* ================= CARDS SECTION ================= */}
+        {/* ================= SERVICES GRID ================= */}
         <motion.div
           className="grid md:grid-cols-3 gap-8"
           variants={cardContainer}
@@ -191,26 +183,28 @@ const ServicesOverview = () => {
           viewport={{ once: true, amount: 0.2 }}
         >
           {services.map((service, index) => (
-            <motion.div key={index} variants={slideUp}>
-              <Link href={service.href}>
-                <div className="
-                  border border-red-300 
-                  bg-black/40 
-                  p-8 
-                  rounded-lg 
-                  shadow-[10px_0_20px_rgba(255,0,0,0.3),-10px_0_20px_rgba(255,0,0,0.3)] 
-                  hover:shadow-[10px_0_25px_rgba(255,0,0,0.5),-10px_0_25px_rgba(255,0,0,0.5)] 
-                  transform hover:scale-105 
-                  transition duration-200
-                ">
-                  <div className="w-12 h-12 bg-blue-100 flex items-center justify-center mb-6">
+            <motion.div key={index} variants={slideUp} className="h-full">
+              <Link href={service.href} className="block h-full">
+                <div className="border border-red-300 bg-black/40 p-8 rounded-lg h-full flex flex-col shadow-[10px_0_20px_rgba(255,0,0,0.3),-10px_0_20px_rgba(255,0,0,0.3)] hover:shadow-[10px_0_25px_rgba(255,0,0,0.5),-10px_0_25px_rgba(255,0,0,0.5)] transform hover:scale-105 transition duration-200">
+
+                  <div className="w-12 h-12 bg-blue-100 flex items-center justify-center mb-6 rounded-md">
                     {service.icon}
                   </div>
-                  <h3 className="font-bold text-red-500 font-heading text-xl mb-3">{service.title}</h3>
-                  <p className="text-neutral-200 mb-4">{service.description}</p>
-                  <button className="text-red-500 border-red-600 border cursor-pointer bg-gray-800 px-4 py-2 mt-2 rounded-lg hover:bg-gray-700 transition font-semibold">
+
+                  <div className="flex-grow">
+                    <h3 className="font-bold text-red-500 font-heading text-xl mb-3">
+                      {service.title}
+                    </h3>
+
+                    <p className="text-neutral-200 mb-4">
+                      {service.description}
+                    </p>
+                  </div>
+
+                  <button className="text-red-500 border-red-600 border cursor-pointer bg-gray-800 px-4 py-2 mt-auto rounded-lg hover:bg-gray-700 transition font-semibold">
                     See Details →
                   </button>
+
                 </div>
               </Link>
             </motion.div>
