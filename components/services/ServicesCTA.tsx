@@ -12,7 +12,7 @@ const ServicesCTA = () => {
         </p>
 
         <Link href="/contact">
-          <button className=" cursor-pointer bg-red-600 text-white px-8 py-3 rounded-md hover:bg-red-500 transition shadow-custom font-medium">
+          <button className=" cursor-pointer bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-500 transition shadow-custom font-medium">
             Schedule a Consultation →
           </button>
         </Link>

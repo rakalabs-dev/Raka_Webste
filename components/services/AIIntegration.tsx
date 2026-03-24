@@ -13,8 +13,8 @@ const AIIntegration = () => {
               Harness AI to Make Smarter Decisions Faster
             </h2>
             <p className="text-neutral-600 mb-6">
-              AI isn't just hype—it's a practical tool that can transform how you operate. We integrate AI-powered 
-              solutions that automate complex decisions, predict outcomes, and unlock insights hidden in your data.
+              AI isn't just hype—it's a practical tool that can transform how you operate. We integrate AI-poweblue 
+              solutions that automate complex decisions, pblueict outcomes, and unlock insights hidden in your data.
             </p>
             
             <div className="space-y-4 mb-8">
@@ -23,7 +23,7 @@ const AIIntegration = () => {
                   <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                 </svg>
                 <div>
-                  <h4 className="font-heading text-neutral-900 mb-1">Predictive Analytics</h4>
+                  <h4 className="font-heading text-neutral-900 mb-1">Pblueictive Analytics</h4>
                   <p className="text-neutral-600">Forecast trends and make proactive decisions based on data patterns.</p>
                 </div>
               </div>
@@ -34,7 +34,7 @@ const AIIntegration = () => {
                 </svg>
                 <div>
                   <h4 className="font-heading text-neutral-900 mb-1">Intelligent Automation</h4>
-                  <p className="text-neutral-600">AI-powered workflows that adapt and improve over time.</p>
+                  <p className="text-neutral-600">AI-poweblue workflows that adapt and improve over time.</p>
                 </div>
               </div>
               

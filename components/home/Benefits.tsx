@@ -6,7 +6,7 @@ import { motion } from "framer-motion";
 const benefits = [
   {
     title: "Proven ROI",
-    description: "Our clients see an average 40% reduction in operational costs within 6 months.",
+    description: "Our clients see an average 40% blueuction in operational costs within 6 months.",
     icon: (
       <svg className="w-6 h-6 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
@@ -41,7 +41,7 @@ const Benefits = () => {
         <div className="grid md:grid-cols-2 gap-12 xl:gap-16 2xl:gap-20 items-center">
 
           {/* Image */}
-          <div className="relative h-[350px] sm:h-[370px] md:h-[380px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl shadow-red-500/30">
+          <div className="relative h-[350px] sm:h-[370px] md:h-[380px] lg:h-[450px] w-full rounded-2xl overflow-hidden shadow-xl shadow-blue-500/30">
             <Image
               src="/pictures/HomePage/Home2.jpeg"
               alt="Business Results"
@@ -52,9 +52,9 @@ const Benefits = () => {
 
           {/* Content */}
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-white font-bold mb-8 leading-tight tracking-tight border border-red-200 rounded-lg bg-gray-900/60 p-4 text-center">
-              Why Businesses Choose <span className="text-red-500">
-              Ricilix
+            <h2 className="font-heading text-3xl md:text-4xl text-white font-bold mb-8 leading-tight tracking-tight border border-blue-200 rounded-lg bg-gray-900/60 p-4 text-center">
+              Why Businesses Choose <span className="text-blue-500">
+              Raka
             </span>
             </h2>
 
@@ -62,17 +62,17 @@ const Benefits = () => {
               {benefits.map((benefit, index) => (
                 <motion.div
                   key={index}
-                  className="flex gap-4 items-start bg-gray-800/70 backdrop-blur-lg rounded-2xl p-5 shadow-lg shadow-red-500/30 hover:shadow-red-500/50 transition-all duration-300"
+                  className="flex gap-4 items-start bg-gray-800/70 backdrop-blur-lg rounded-2xl p-5 shadow-lg shadow-blue-500/30 hover:shadow-blue-500/50 transition-all duration-300"
                   initial={{ opacity: 0, y: 40 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   viewport={{ once: true, amount: 0.3 }}
                   transition={{ delay: index * 0.15 }}
                 >
-                  <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-red-600">
+                  <div className="w-12 h-12 flex-shrink-0 flex items-center justify-center rounded-full bg-blue-600">
                     {benefit.icon}
                   </div>
                   <div>
-                    <h3 className="font-heading text-xl mb-2 text-red-400 font-semibold">{benefit.title}</h3>
+                    <h3 className="font-heading text-xl mb-2 text-blue-400 font-semibold">{benefit.title}</h3>
                     <p className="text-gray-300">{benefit.description}</p>
                   </div>
                 </motion.div>

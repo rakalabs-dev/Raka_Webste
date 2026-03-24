@@ -117,7 +117,7 @@ const ContactForm = () => {
      COMMON INPUT STYLE
   ========================= */
   const inputStyle =
-    "w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:border-red-600 transition text-neutral-100 bg-transparent placeholder-neutral-400";
+    "w-full px-4 py-3 border border-neutral-300 rounded-lg focus:outline-none focus:border-blue-600 transition text-neutral-100 bg-transparent placeholder-neutral-400";
 
   return (
     <div>
@@ -140,7 +140,7 @@ const ContactForm = () => {
         <>
           {/* ERROR MESSAGE */}
           {error && (
-            <div className="mb-6 text-red-600 text-center font-medium">
+            <div className="mb-6 text-blue-600 text-center font-medium">
               ⚠ {error}
             </div>
           )}
@@ -243,7 +243,7 @@ const ContactForm = () => {
             <button
               type="submit"
               disabled={loading}
-              className="w-full bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 transition shadow-md font-medium disabled:opacity-60"
+              className="w-full bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 transition shadow-md font-medium disabled:opacity-60"
             >
               {loading ? "Sending..." : "Send Message"}
             </button>

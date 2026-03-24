@@ -28,7 +28,7 @@ const ChatbotSolutions = () => {
             </h2>
 
             <p className="text-neutral-600 mb-6">
-              Transform customer support with AI-powered chatbots that answer queries instantly,
+              Transform customer support with AI-poweblue chatbots that answer queries instantly,
               guide users through your products and services, and help your business scale
               without increasing staff.
             </p>

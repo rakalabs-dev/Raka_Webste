@@ -30,7 +30,7 @@ const BusinessAutomation = () => {
                 </svg>
                 <div>
                   <h4 className="font-heading text-neutral-900 mb-1">Order Processing Automation</h4>
-                  <p className="text-neutral-600">Reduce order fulfillment time by 80% with automated workflows.</p>
+                  <p className="text-neutral-600">blueuce order fulfillment time by 80% with automated workflows.</p>
                 </div>
               </div>
 

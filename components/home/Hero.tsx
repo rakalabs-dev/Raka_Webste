@@ -7,7 +7,7 @@ import Link from "next/link";
 import SphereModel from "./SphereModel";
 
 // Import 3D Model (disable SSR)
-const RicilixModel = dynamic(() => import("./RicilixModel"), {
+const RakaModel = dynamic(() => import("./RicilixModel"), {
   ssr: false,
 });
 
@@ -70,14 +70,14 @@ const Hero = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="border mt-6 lg:mt-8 border-red-200 rounded-lg py-8 px-3 lg:px-6  bg-gray-900/60"
+            className="border mt-6 lg:mt-8 border-blue-200 rounded-lg py-8 px-3 lg:px-6  bg-gray-900/60"
           >
             <motion.h1
               variants={slideInLeft}
               className="tracking-tight  font-bold leading-tight font-heading text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl text-gray-100 mb-6"
             >
-              Transform Your <span className="text-red-600">
-                Business </span> with Intelligent <span className="text-red-600">
+              Transform Your <span className="text-blue-600">
+                Business </span> with Intelligent <span className="text-blue-600">
                 Automation
               </span>
             </motion.h1>
@@ -94,7 +94,7 @@ const Hero = () => {
               className="flex flex-col sm:flex-row gap-4"
             >
               <Link href="/contact">
-                <button className="bg-red-700 cursor-pointer font-bold text-gray-100 px-8 py-3 rounded-lg hover:bg-red-600 transition shadow-custom">
+                <button className="bg-blue-700 cursor-pointer font-bold text-gray-100 px-8 py-3 rounded-lg hover:bg-blue-600 transition shadow-custom">
                   Lets Start Now →
                 </button>
               </Link>
@@ -109,7 +109,7 @@ const Hero = () => {
             viewport={{ once: true, amount: 0.3 }}
             className="relative h-[320px] md:h-[380px] xl:h-[420px] w-full
              rounded-xl
-             shadow-[8px_10px_25px_rgba(255,0,0,0.4)]  // red shadow
+             shadow-[0_10px_30px_rgba(59,130,246,0.5)]  // blue shadow
              bg-black/40" // semi-transparent overlay to see behind
           >
             <Image
@@ -121,7 +121,7 @@ const Hero = () => {
             />
           </motion.div>
         </div><div className="w-full flex justify-center items-center mt-10">
-          <div className="relative bg-black/40 lg:w-2/3 backdrop-blur-md border border-red-500 shadow-lg rounded-2xl p-5 md:p-8">
+          <div className="relative bg-black/40 lg:w-2/3 backdrop-blur-md border border-blue-500 shadow-lg rounded-2xl p-5 md:p-8">
 
             {/* ================= LOGO ================= */}
             <motion.div
@@ -143,8 +143,8 @@ const Hero = () => {
         "
               >
                 <Image
-                  src="/pictures/HomePage/R logo.png"
-                  alt="Ricilix Logo"
+                  src="/pictures/HomePage/logo.png"
+                  alt="Raka Logo"
                   fill
                   className="object-contain"
                   priority
@@ -164,11 +164,11 @@ const Hero = () => {
                 variants={slideInLeft}
                 className="text-sm md:text-base text-gray-300 font-medium"
               >
-                <span className="font-heading font-semibold text-red-500">60%</span>{" "}
+                <span className="font-heading font-semibold text-blue-500">60%</span>{" "}
                 Less Manual Work •{" "}
-                <span className="font-heading font-semibold text-red-500">40%</span>{" "}
+                <span className="font-heading font-semibold text-blue-500">40%</span>{" "}
                 Better Pipeline Visibility •{" "}
-                <span className="font-heading font-semibold text-red-500">2× Faster Operations</span>
+                <span className="font-heading font-semibold text-blue-500">2× Faster Operations</span>
               </motion.p>
             </motion.div>
           </div>
@@ -179,7 +179,7 @@ const Hero = () => {
       {/* ===== 3D MODEL (Optional) ===== */}
       {/* 
       <div className="mt-6 w-full">
-        <RicilixModel />
+        <RakaModel />
       </div> 
       */}
 

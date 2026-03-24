@@ -11,7 +11,7 @@ type Props = {
 
 const ServiceBlock = ({ title, description, image, reverse }: Props) => {
   return (
-    <section className="py-16 md:py-20 bg-gradient-to-b from-black to-red-950">
+    <section className="py-16 md:py-20 bg-gradient-to-b from-black to-blue-950">
       <div className="max-w-8xl mx-auto px-6 sm:px-16 lg:px-20">
 
         <div
@@ -22,7 +22,7 @@ const ServiceBlock = ({ title, description, image, reverse }: Props) => {
 
           {/* TEXT */}
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl leading-tight tracking-tight text-red-500 font-bold mb-6">
+            <h2 className="font-heading text-3xl md:text-4xl leading-tight tracking-tight text-blue-500 font-bold mb-6">
               {title}
             </h2>
 
@@ -31,7 +31,7 @@ const ServiceBlock = ({ title, description, image, reverse }: Props) => {
             </p>
 
             <Link href="/contact">
-              <button className="bg-red-600 text-white px-6 py-3 rounded-lg hover:bg-red-700 cursor-pointer transition">
+              <button className="bg-blue-600 text-white px-6 py-3 rounded-lg hover:bg-blue-700 cursor-pointer transition">
                 Let's Start →
               </button>
             </Link>

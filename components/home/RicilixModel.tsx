@@ -6,7 +6,7 @@ import { useRef, Suspense, useEffect, useState } from "react";
 import * as THREE from "three";
 
 function Model({ isMobile }: { isMobile: boolean }) {
-  const { scene } = useGLTF("/Model/Ricilix Model.glb");
+  const { scene } = useGLTF("/Model/Raka Model.glb");
   const modelRef = useRef<THREE.Group>(null);
 
   // Center model properly
@@ -33,9 +33,9 @@ function Model({ isMobile }: { isMobile: boolean }) {
   );
 }
 
-useGLTF.preload("/Model/Ricilix Model.glb");
+useGLTF.preload("/Model/Raka Model.glb");
 
-export default function RicilixModel() {
+export default function RakaModel() {
   const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {

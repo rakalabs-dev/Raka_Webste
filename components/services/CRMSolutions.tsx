@@ -32,7 +32,7 @@ const CRMSolutions = () => {
                 </svg>
                 <div>
                   <h4 className="font-heading text-neutral-900 mb-1">Custom CRM Implementation</h4>
-                  <p className="text-neutral-600">Tailored systems that match your exact sales process and customer journey.</p>
+                  <p className="text-neutral-600">Tailoblue systems that match your exact sales process and customer journey.</p>
                 </div>
               </div>
 
