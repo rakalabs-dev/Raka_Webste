@@ -68,16 +68,19 @@ const Navbar = () => {
                         <div className="flex justify-between items-center h-16">
 
                             {/* Logo */}
-                            <Link href="/" className="flex items-center">
-                                <Image
-                                    src="/pictures/HomePage/Logo.png"
-                                    alt="Raka Logo"
-                                    width={160}
-                                    height={50}
-                                    priority
-                                    className="h-13 xl:h-15 text-blue-500 w-auto object-contain hover:opacity-80 transition"
-                                />
-                            </Link>
+                            <div className="flex items-center gap-2">
+  <Link href="/">
+    <Image
+      src="/pictures/HomePage/Logo.png"
+      alt="Raka Logo"
+      width={160}
+      height={50}
+      priority
+      className="h-13 lg:pl-10 xl:h-13 w-auto object-contain hover:opacity-80 transition"
+    />
+  </Link>
+
+</div>
 
 
                             {/* Desktop Links */}
