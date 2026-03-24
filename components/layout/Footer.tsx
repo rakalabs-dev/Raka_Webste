@@ -10,7 +10,7 @@ const Footer = () => {
         <div className="flex justify-center mb-10">
         <div className="relative w-[200px] h-[70px] sm:w-[240px] sm:h-[80px] md:w-[280px] md:h-[90px] lg:w-[320px] lg:h-[100px]">
   <Image
-    src="/pictures/HomePage/logo.png"
+    src="/pictures/HomePage/Logo.png"
     alt="Raka Logo"
     fill
     className="object-contain"

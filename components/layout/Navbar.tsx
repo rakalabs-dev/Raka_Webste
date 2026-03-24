@@ -70,12 +70,12 @@ const Navbar = () => {
                             {/* Logo */}
                             <Link href="/" className="flex items-center">
                                 <Image
-                                    src="/pictures/HomePage/logo.png"
+                                    src="/pictures/HomePage/Logo.png"
                                     alt="Raka Logo"
                                     width={160}
                                     height={50}
                                     priority
-                                    className="h-17 xl:h-20 text-blue-500 w-auto object-contain hover:opacity-80 transition"
+                                    className="h-13 xl:h-15 text-blue-500 w-auto object-contain hover:opacity-80 transition"
                                 />
                             </Link>
 

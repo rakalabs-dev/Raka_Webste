@@ -143,7 +143,7 @@ const Hero = () => {
         "
               >
                 <Image
-                  src="/pictures/HomePage/logo.png"
+                  src="/pictures/HomePage/Logo.png"
                   alt="Raka Logo"
                   fill
                   className="object-contain"
