@@ -11,7 +11,7 @@ const Mission = () => {
               Building the <span className="font-heading font-semibold text-blue-500">Future Of Business</span>{" "} Operations
             </h1>
             <p className="text-lg md:text-xl text-neutral-200">
-              At Ricilix, we believe technology should empower businesses, not complicate them. 
+              At Raka Labs, we believe technology should empower businesses, not complicate them. 
               Our mission is to make advanced automation and AI accessible to every growing company.
             </p>
           </div>
@@ -35,8 +35,8 @@ const Mission = () => {
             "
           >
             <Image
-              src="/pictures/HomePage/R logo.png"
-              alt="Ricilix Logo"
+              src="/pictures/HomePage/Logo1.png"
+              alt="Raka Labs Logo"
               fill
               className="object-contain"
               priority

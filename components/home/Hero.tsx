@@ -113,7 +113,7 @@ const Hero = () => {
              bg-black/40" // semi-transparent overlay to see behind
           >
             <Image
-              src="/pictures/HomePage/Home1.jpeg"
+              src="/pictures/HomePage/home11.png"
               alt="Business Automation"
               fill
               className="rounded-xl object-cover opacity-90" // slightly transparent
@@ -131,19 +131,19 @@ const Hero = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              <div
-                className="
-          relative
-          w-[220px] h-[95px]
-          sm:w-[260px] sm:h-[115px]
-          md:w-[400px] md:h-[175px]
-          lg:w-[480px] lg:h-[210px]
-          xl:w-[560px] xl:h-[240px]
-          2xl:w-[620px] 2xl:h-[260px]
-        "
-              >
+  <div
+  className="
+    relative
+    w-[300px] h-[130px]
+    sm:w-[380px] sm:h-[170px]
+    md:w-[560px] md:h-[250px]
+    lg:w-[720px] lg:h-[320px]
+    xl:w-[860px] xl:h-[380px]
+    2xl:w-[950px] 2xl:h-[420px]
+  "
+>
                 <Image
-                  src="/pictures/HomePage/Logo.png"
+                  src="/pictures/HomePage/Logo1.png"
                   alt="Raka Logo"
                   fill
                   className="object-contain"

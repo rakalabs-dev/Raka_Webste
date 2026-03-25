@@ -10,7 +10,7 @@ export default function PortfolioPreview() {
         {/* Heading */}
         <div className="text-center mb-14">
           <h2 className="text-3xl md:text-4xl font-bold text-blue-500">
-            Featublue Projects
+            Featured Projects
           </h2>
           <p className="text-neutral-200 mt-4">
             Real-world AI automation and intelligent systems built for modern businesses.

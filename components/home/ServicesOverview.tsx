@@ -117,33 +117,79 @@ const ServicesOverview = () => {
       href: "/services",
     },
     {
-      title: "Digital Marketing & SEO",
+      title: "Mobile App Development",
       description: (
         <>
-          Increase online visibility and generate more qualified leads with data-driven SEO strategies boosting traffic by{" "}
-          <span className="font-semibold text-blue-500">50%+</span>.
+          Build powerful, scalable mobile applications tailored to your business needs, delivering seamless user experiences and boosting engagement by{" "}
+          <span className="font-semibold text-blue-500">60%+</span>.
         </>
       ),
       icon: (
         <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 4a7 7 0 017 7c0 1.657-.672 3.157-1.757 4.243L20 19l-1 1-3.757-3.757A6.978 6.978 0 0111 18a7 7 0 110-14z" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 4h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2z" />
         </svg>
       ),
-      href: "/digital-marketing",
+      href: "/mobile-app-development",
     },
     {
-      title: "AI Integration",
+      title: "Fintech Solutions",
       description: (
         <>
-          Deploy AI-poweblue solutions helping teams operate <span className="font-semibold text-blue-500">2× faster</span>.
+          Develop secure and scalable financial technology solutions, streamlining payments, transactions, and operations while increasing efficiency by{" "}
+          <span className="font-semibold text-blue-500">2×</span>.
         </>
       ),
       icon: (
         <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3" />
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-10v12m-7-6h14" />
         </svg>
       ),
-      href: "/services",
+      href: "/fintech-solutions",
+    },
+    {
+      title: "Cybersecurity Services",
+      description: (
+        <>
+          Protect your digital assets with advanced security solutions, preventing threats and ensuring data integrity while reducing risks by{" "}
+          <span className="font-semibold text-blue-500">70%+</span>.
+        </>
+      ),
+      icon: (
+        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0-1.105.895-2 2-2s2 .895 2 2-.895 2-2 2-2-.895-2-2zm0 0V7m0 4v6m-6-6a6 6 0 1112 0c0 7-6 9-6 9s-6-2-6-9z" />
+        </svg>
+      ),
+      href: "/cybersecurity-services",
+    },
+    {
+      title: "Custom SaaS Development",
+      description: (
+        <>
+          Build tailored SaaS products designed to scale your business, automate workflows, and enhance productivity with solutions improving efficiency by{" "}
+          <span className="font-semibold text-blue-500">3×</span>.
+        </>
+      ),
+      icon: (
+        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 014-4h1V7a4 4 0 118 0v4h1a4 4 0 014 4v1H3v-1z" />
+        </svg>
+      ),
+      href: "/custom-saas-development",
+    },
+    {
+      title: "Data Analytics",
+      description: (
+        <>
+          Transform raw data into actionable insights with advanced analytics solutions, enabling smarter decisions and driving growth by{" "}
+          <span className="font-semibold text-blue-500">40%+</span>.
+        </>
+      ),
+      icon: (
+        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3v18M6 8v13M16 13v8M21 10v11" />
+        </svg>
+      ),
+      href: "/data-analytics",
     },
   ];
 

@@ -9,6 +9,10 @@ type Service = {
   image: string;
 };
 
+// ✅ Helper to generate clean IDs
+const generateId = (title: string) =>
+  title.toLowerCase().replace(/[^a-z0-9]+/g, "-");
+
 const services: Service[] = [
   {
     title: "Full Stack Web Solutions",
@@ -41,7 +45,7 @@ const services: Service[] = [
       </>
     ),
     image:
-      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
+      "https://images.unsplash.com/photo-1551434678-e076c223a692?w=800",
   },
 
   {
@@ -81,39 +85,67 @@ const services: Service[] = [
   },
 
   {
-    title: "Digital Marketing & SEO",
+    title: "Mobile App Development",
     description: (
       <>
-        A great product or service needs visibility to succeed online. Our
-        digital marketing and SEO strategies help businesses rank higher in
-        search engines, attract targeted traffic, and convert visitors into
-        loyal customers. Through technical SEO, content strategy, and
-        data-driven marketing campaigns, businesses can increase organic
-        traffic by over{" "}
-        <span className="font-semibold text-red-500">50%</span> and generate a
-        steady flow of qualified leads.
+        We build high-performance mobile applications designed to deliver seamless
+        user experiences across iOS and Android. Businesses often see up to{" "}
+        <span className="font-semibold text-red-500">60% higher user engagement</span>.
       </>
     ),
     image:
-      "https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=800",
+      "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=800",
   },
 
   {
-    title: "AI Integration",
+    title: "Fintech Solutions",
     description: (
       <>
-        Artificial Intelligence is transforming how businesses operate. We
-        integrate AI solutions into your existing systems to automate complex
-        processes, uncover valuable insights from data, and improve
-        decision-making across your organization. Companies leveraging AI
-        effectively often operate{" "}
-        <span className="font-semibold text-red-500">2× faster</span> and gain a
-        significant competitive advantage through smarter, data-driven
-        operations.
+        We develop secure financial technology systems like payment platforms and
+        digital wallets, improving efficiency by{" "}
+        <span className="font-semibold text-red-500">2×</span>.
       </>
     ),
     image:
-      "https://images.unsplash.com/photo-1677442136019-21780ecad995?w=800",
+      "https://images.unsplash.com/photo-1563986768609-322da13575f3?w=800",
+  },
+
+  {
+    title: "Cybersecurity Services",
+    description: (
+      <>
+        Protect your business from digital threats with advanced security
+        solutions, reducing risks by{" "}
+        <span className="font-semibold text-red-500">70%+</span>.
+      </>
+    ),
+    image:
+      "https://images.unsplash.com/photo-1550751827-4bd374c3f58b?w=800",
+  },
+
+  {
+    title: "Custom SaaS Development",
+    description: (
+      <>
+        Build scalable SaaS platforms that automate workflows and increase
+        efficiency by{" "}
+        <span className="font-semibold text-red-500">3×</span>.
+      </>
+    ),
+    image:
+      "https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800",
+  },
+
+  {
+    title: "Data Analytics",
+    description: (
+      <>
+        Turn data into insights and improve decision-making by{" "}
+        <span className="font-semibold text-red-500">40%</span>.
+      </>
+    ),
+    image:
+      "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=800",
   },
 ];
 
@@ -123,13 +155,14 @@ export default function ServicesPage() {
       <ServicesHero />
 
       {services.map((service, index) => (
-        <ServiceBlock
-          key={service.title}
-          title={service.title}
-          description={service.description}
-          image={service.image}
-          reverse={index % 2 !== 0}
-        />
+        <div id={generateId(service.title)} key={service.title}>
+          <ServiceBlock
+            title={service.title}
+            description={service.description}
+            image={service.image}
+            reverse={index % 2 !== 0}
+          />
+        </div>
       ))}
 
       <ServicesCTA />

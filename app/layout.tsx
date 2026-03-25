@@ -21,7 +21,7 @@ const bodyFont = Work_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Ricilix - Business Automation & Digital Solutions",
+  title: "Raka Labs - Business Automation & Digital Solutions",
   description:
     "Transform your business with intelligent automation, CRM optimization, and AI-driven solutions.",
 };

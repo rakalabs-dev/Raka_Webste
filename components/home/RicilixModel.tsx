@@ -33,7 +33,7 @@ function Model({ isMobile }: { isMobile: boolean }) {
   );
 }
 
-useGLTF.preload("/Model/Raka Model.glb");
+useGLTF.preload("/Model/snowy_mountain.glb");
 
 export default function RakaModel() {
   const [isMobile, setIsMobile] = useState(false);

@@ -11,6 +11,15 @@ const row1Technologies = [
   { name: "Salesforce", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/salesforce/salesforce-original.svg" },
   { name: "Make", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg" },
   { name: "OpenAI", logo: "https://upload.wikimedia.org/wikipedia/commons/4/4d/OpenAI_Logo.svg" },
+
+  // ✅ NEW
+  { name: "Stripe", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/stripe.svg" },
+  { name: "Firebase", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" },
+  { 
+    name: "AWS", 
+    logo: "https://upload.wikimedia.org/wikipedia/commons/9/93/Amazon_Web_Services_Logo.svg" 
+  },
+  { name: "Docker", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" },
 ];
 
 // Row 2 technologies
@@ -21,6 +30,12 @@ const row2Technologies = [
   { name: "PyTorch", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pytorch/pytorch-original.svg" },
   { name: "HuggingFace", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/huggingface.svg" },
   { name: "LangChain", logo: "https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/langchain.svg" },
+
+  // ✅ NEW
+  { name: "Flutter", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flutter/flutter-original.svg" },
+  { name: "React Native", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" },
+  { name: "Kubernetes", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg" },
+  { name: "PostgreSQL", logo: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" },
 ];
 
 const TechRow = ({ technologies, reverse = false }: { technologies: typeof row1Technologies; reverse?: boolean }) => {
@@ -38,7 +53,7 @@ const TechRow = ({ technologies, reverse = false }: { technologies: typeof row1T
             key={index}
             className="
               flex items-center gap-2 md:gap-3
-              bg-gradient-to-r from-gray-800/80 via-gray-900/60 to-black/80
+              bg-gradient-to-r from-gray-700/80 via-gray-900/60 to-black/80
               backdrop-blur-lg
               shadow-xl shadow-purple-500/30
               rounded-xl md:rounded-2xl

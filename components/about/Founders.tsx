@@ -10,7 +10,7 @@ const Founders = () => {
             Meet Our <span className="font-heading font-semibold text-blue-500">Leadership</span>{" "} Team
           </h2>
           <p className="text-lg text-neutral-200">
-            The professionals driving innovation, technology, and growth at Ricilix.
+            The professionals driving innovation, technology, and growth at Raka Labs.
           </p>
         </div>
 
@@ -19,7 +19,7 @@ const Founders = () => {
                     <div className="bg-gray-950 p-8 rounded-2xl shadow-lg text-center border border-blue-300">
             <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
               <Image
-                src="/pictures/Saad.png"
+                src="/pictures/M Saad.png"
                 alt="Waleed Azam"
                 fill
                 className="object-cover"
@@ -31,11 +31,11 @@ const Founders = () => {
             </h3>
 
             <p className="text-green-600 mb-4 font-bold">
-              Senior Software Developer
+              CEO & Co-Founder
             </p>
 
             <p className="text-neutral-200">
-              Specializes in AI integrations, backend systems, and building robust automation infrastructure.
+            Specialization in cybersecurity, leading the development of secure systems, protecting digital assets, and ensuring resilient infrastructure against evolving threats.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ const Founders = () => {
           <div className="bg-gray-950 p-8 rounded-2xl shadow-lg text-center border border-blue-300">
             <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ">
               <Image
-                src="/pictures/hannan.png"
+                src="/pictures/Hannan Asif.png"
                 alt="Abdul Hannan Asif"
                 fill
                 className="object-cover"
@@ -55,11 +55,11 @@ const Founders = () => {
             </h3>
 
             <p className="text-green-600 mb-4 font-bold">
-              Team Lead & Solutions Architect
+            CTO & Co-Founder
             </p>
 
             <p className="text-neutral-200">
-              Leads strategic automation initiatives and oversees the development of scalable AI-poweblue solutions.
+              Leads strategic agentic AI initiatives and oversees the development of scalable AI-powered solutions.
             </p>
           </div>
 
@@ -68,7 +68,7 @@ const Founders = () => {
 <div className="bg-gray-950 border border-blue-300 p-8 rounded-2xl shadow-lg text-center">
             <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden">
               <Image
-                src="/pictures/ihsan.png"
+                src="/pictures/Ihsan Elahi.png"
                 alt="Sharjeel"
                 fill
                 className="object-cover"
@@ -80,11 +80,11 @@ const Founders = () => {
             </h3>
 
             <p className="text-green-600 mb-4 font-bold">
-              Ai Agents & Automation Expert
+              Cheif Financial Officer
             </p>
 
             <p className="text-neutral-200">
-              Drives brand growth through AI agnets, latest automated solutions, and data-driven acquisition strategies.
+              Drives brand growth through AI agents, latest automated solutions, and data-driven acquisition strategies.
             </p>
           </div>
           {/* Sharjeel */}
@@ -99,7 +99,7 @@ const Founders = () => {
             </div>
 
             <h3 className="font-heading text-xl text-neutral-100 mb-2">
-              Ihsan Elahi
+              Sharjeel Mansoor
             </h3>
 
             <p className="text-green-600 mb-4 font-bold">

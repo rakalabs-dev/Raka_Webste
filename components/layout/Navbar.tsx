@@ -71,12 +71,12 @@ const Navbar = () => {
                             <div className="flex items-center gap-2">
   <Link href="/">
     <Image
-      src="/pictures/HomePage/Logo.png"
+      src="/pictures/HomePage/Logo1.png"
       alt="Raka Logo"
       width={160}
       height={50}
       priority
-      className="h-13 lg:pl-10 xl:h-13 w-auto object-contain hover:opacity-80 transition"
+      className="h-13 lg:pl-14 xl:h-15 w-auto object-contain hover:opacity-80 transition"
     />
   </Link>
 

@@ -11,18 +11,18 @@ const testimonials = [
       "Raka streamlined our inventory and order management processes. Our operations are now faster and far more efficient.",
   },
   {
-    company: "",
+    company: "Zarafa Chargers",
     description: "Charger sales and distribution company",
     rating: 4,
     review:
       "With Raka automation and AI integrations, we improved customer inquiries handling and boosted our sales workflow.",
   },
   {
-    company: "Ihsan Traders",
-    description: "Digital transformation and CRM consultancy",
+    company: "VFS Global - Portugal",
+    description: "Visa appointment automation solution",
     rating: 5,
     review:
-      "Raka helped streamline our CRM and business processes efficiently.",
+      "Raka automated our visa appointment system, significantly improving efficiency and reducing manual workload.",
   },
 ];
 
