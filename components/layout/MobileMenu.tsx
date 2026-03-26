@@ -82,7 +82,7 @@ const MobileMenu = ({ isOpen, onClose, navLinks }: MobileMenuProps) => {
               );
             })}
 
-            {/* CTA Button */}
+            {/* CTA Button
             <button
               onClick={() => {
                 router.push('/contact');
@@ -91,7 +91,7 @@ const MobileMenu = ({ isOpen, onClose, navLinks }: MobileMenuProps) => {
               className="w-full bg-blue-600 font-bold text-white px-6 py-2 rounded-lg hover:bg-blue-700 transition cursor-pointer mt-6"
             >
               Contact Us
-            </button>
+            </button> */}
 
           </div>
         </div>

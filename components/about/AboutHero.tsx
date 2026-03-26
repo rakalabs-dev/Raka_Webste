@@ -1,6 +1,6 @@
 const AboutHero = () => {
   return (
-    <section className="py-16 md:py-24 bg-black max-h-[600px] overflow-hidden">
+    <section className="pt-16 md:pt-24 pb-5  bg-black max-h-[600px] overflow-hidden">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <h1 className="font-heading text-4xl md:text-5xl leading-tight tracking-tight text-white font-bold mb-6">
           Inspired by <span className="text-blue-600">Strength,</span> Built for <span className="text-blue-600">Impact</span>
