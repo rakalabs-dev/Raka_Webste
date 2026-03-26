@@ -20,9 +20,9 @@ const CTASection = () => {
             and workflow optimization can accelerate your business growth.
           </p>
 
-          <Link href="/contact">
+          <Link href="https://calendly.com/rakalabs12/30min" target="_blank">
             <button className="group bg-blue-600 text-white font-semibold px-10 py-4 rounded-xl shadow-lg transition duration-300 hover:bg-blue-500 hover:shadow-2xl hover:scale-105 cursor-pointer">
-              Book Free Consultation
+              Book Free Discovery Call →
             </button>
           </Link>
 

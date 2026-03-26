@@ -70,7 +70,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
         </svg>
       ),
-      href: "/services",
+      href: "/services#full-stack-web-solutions",
     },
     {
       title: "Business Automation",
@@ -84,7 +84,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M13 10V3L4 14h7v7l9-11h-7z" />
         </svg>
       ),
-      href: "/services",
+      href: "/services#business-automation",
     },
     {
       title: "CRM Optimization",
@@ -99,7 +99,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 19v-6a2 2 0 00-2-2H5a2 2 0 00-2 2v6a2 2 0 002 2h2a2 2 0 002-2zm0 0V9a2 2 0 012-2h2a2 2 0 012 2v10" />
         </svg>
       ),
-      href: "/services",
+      href: "/services#crm-optimization",
     },
     {
       title: "AI Chatbots for Business",
@@ -114,7 +114,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01" />
         </svg>
       ),
-      href: "/services",
+      href: "/services#ai-chatbots-for-business",
     },
     {
       title: "Mobile App Development",
@@ -129,7 +129,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 4h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2z" />
         </svg>
       ),
-      href: "/mobile-app-development",
+      href: "/services#mobile-app-development",
     },
     {
       title: "Fintech Solutions",
@@ -144,7 +144,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-10v12m-7-6h14" />
         </svg>
       ),
-      href: "/fintech-solutions",
+      href: "/services#fintech-solutions",
     },
     {
       title: "Cybersecurity Services",
@@ -159,7 +159,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0-1.105.895-2 2-2s2 .895 2 2-.895 2-2 2-2-.895-2-2zm0 0V7m0 4v6m-6-6a6 6 0 1112 0c0 7-6 9-6 9s-6-2-6-9z" />
         </svg>
       ),
-      href: "/cybersecurity-services",
+      href: "/services#cybersecurity-services",
     },
     {
       title: "Custom SaaS Development",
@@ -174,7 +174,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 014-4h1V7a4 4 0 118 0v4h1a4 4 0 014 4v1H3v-1z" />
         </svg>
       ),
-      href: "/custom-saas-development",
+      href: "/services#custom-saas-development",
     },
     {
       title: "Data Analytics",
@@ -189,7 +189,7 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3v18M6 8v13M16 13v8M21 10v11" />
         </svg>
       ),
-      href: "/data-analytics",
+      href: "/services#data-analytics",
     },
   ];
 
@@ -259,6 +259,17 @@ transform hover:scale-105 transition duration-300">
             </motion.div>
           ))}
         </motion.div>
+        <div className="flex justify-center pt-15 items-center">
+          <a
+            href="https://calendly.com/rakalabs12/30min"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <button className="group bg-blue-600 text-white font-semibold px-10 py-4 rounded-xl shadow-lg transition duration-300 hover:bg-blue-500 hover:shadow-2xl hover:scale-105 cursor-pointer">
+              Book Free Discovery Call →
+            </button>
+          </a>
+        </div>
       </div>
     </section>
   );

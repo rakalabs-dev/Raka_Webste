@@ -11,9 +11,9 @@ const ServicesCTA = () => {
           Let's discuss which solutions will have the biggest impact on your business growth.
         </p>
 
-        <Link href="/contact">
-          <button className=" cursor-pointer bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-500 transition shadow-custom font-medium">
-            Schedule a Consultation →
+        <Link href="https://calendly.com/rakalabs12/30min" target="_blank">
+          <button className=" cursor-pointer bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-500 transition shadow-custom font-bold">
+            Schedule a Free Consultation →
           </button>
         </Link>
         
