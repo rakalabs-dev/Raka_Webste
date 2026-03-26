@@ -74,19 +74,20 @@ const Hero = () => {
           >
             <motion.h1
               variants={slideInLeft}
-              className="tracking-tight  font-bold leading-tight font-heading text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl text-gray-100 mb-6"
+              className="tracking-tight font-bold leading-tight font-heading text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl text-gray-100 mb-6"
             >
-              Transform Your <span className="text-blue-600">
-                Business </span> with Intelligent <span className="text-blue-600">
-                Automation
-              </span>
+              Build a <span className="text-blue-500">Stronger Business</span> with Intelligent{" "}
+              <span className="text-blue-500">Automation</span> and <span className="text-blue-500">Tech</span> Solutions
             </motion.h1>
 
             <motion.p
               variants={slideInLeft}
-              className="text-base md:text-lg xl:text-xl text-neutral-200 mb-8"
+              className="text-base md:text-lg xl:text-xl text-neutral-200 mb-8 leading-relaxed"
             >
-              We help eCommerce and service businesses scale faster with AI-driven workflows, CRM optimization, and custom automation solutions.
+              At Raka, we help businesses eliminate inefficiencies and scale faster with
+              AI-driven workflows, CRM optimization, and smart automation. We build systems
+              that run seamlessly—giving your business the strength, clarity, and independence
+              to grow in a competitive market.
             </motion.p>
 
             <motion.div
@@ -131,8 +132,8 @@ const Hero = () => {
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-  <div
-  className="
+              <div
+                className="
     relative
     w-[300px] h-[130px]
     sm:w-[380px] sm:h-[170px]
@@ -141,7 +142,7 @@ const Hero = () => {
     xl:w-[860px] xl:h-[380px]
     2xl:w-[950px] 2xl:h-[420px]
   "
->
+              >
                 <Image
                   src="/pictures/HomePage/Logo1.png"
                   alt="Raka Logo"
