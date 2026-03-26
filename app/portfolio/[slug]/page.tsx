@@ -26,24 +26,24 @@ export default async function ProjectDetail({ params }: PageProps) {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-purple-50 to-purple-100 py-16 px-6">
-      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-purple-100">
+    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-black py-16 px-6">
+      <div className="max-w-7xl mx-auto bg-white rounded-3xl shadow-xl p-8 md:p-12 border border-blue-100">
 
         <Link
           href="/portfolio"
-          className="text-sm text-purple-600 hover:text-purple-800 mb-8 inline-block"
+          className="text-sm text-blue-600 hover:text-blue-800 mb-8 inline-block"
         >
           ← Back to Portfolio
         </Link>
 
         <div className="grid md:grid-cols-2 gap-10 items-start">
           <div>
-            <h1 className="text-3xl md:text-4xl font-bold text-purple-800 mb-6">
+            <h1 className="text-3xl md:text-4xl font-bold text-blue-800 mb-6">
               {project.title}
             </h1>
 
             <section className="mb-8">
-              <h2 className="text-lg font-semibold text-purple-700 mb-2">
+              <h2 className="text-lg font-semibold text-blue-700 mb-2">
                 Problem
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -52,7 +52,7 @@ export default async function ProjectDetail({ params }: PageProps) {
             </section>
 
             <section className="mb-8">
-              <h2 className="text-lg font-semibold text-purple-700 mb-2">
+              <h2 className="text-lg font-semibold text-blue-700 mb-2">
                 Solution
               </h2>
               <p className="text-gray-700 leading-relaxed">
@@ -72,14 +72,14 @@ export default async function ProjectDetail({ params }: PageProps) {
         </div>
 
         <section className="mt-12">
-          <h2 className="text-xl font-semibold text-purple-700 mb-6">
+          <h2 className="text-xl font-semibold text-blue-700 mb-6">
             Key Features
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {project.content.features.map((feature, i) => (
               <div
                 key={i}
-                className="bg-purple-50 border border-purple-100 rounded-lg px-4 py-3 text-gray-700"
+                className="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 text-gray-700"
               >
                 {feature}
               </div>
@@ -88,14 +88,14 @@ export default async function ProjectDetail({ params }: PageProps) {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-xl font-semibold text-purple-700 mb-6">
+          <h2 className="text-xl font-semibold text-blue-700 mb-6">
             Tech Stack
           </h2>
           <div className="flex flex-wrap gap-3">
             {project.content.techStack.map((tech, i) => (
               <span
                 key={i}
-                className="px-4 py-2 bg-purple-100 text-purple-700 rounded-full text-sm font-medium"
+                className="px-4 py-2 bg-blue-100 text-blue-700 rounded-full text-sm font-medium"
               >
                 {tech}
               </span>
@@ -104,14 +104,14 @@ export default async function ProjectDetail({ params }: PageProps) {
         </section>
 
         <section className="mt-12">
-          <h2 className="text-xl font-semibold text-purple-700 mb-6">
+          <h2 className="text-xl font-semibold text-blue-700 mb-6">
             Impact
           </h2>
           <div className="grid md:grid-cols-2 gap-4">
             {project.content.impact.map((item, i) => (
               <div
                 key={i}
-                className="bg-purple-50 border border-purple-100 rounded-lg px-4 py-3 text-gray-700"
+                className="bg-blue-50 border border-blue-100 rounded-lg px-4 py-3 text-gray-700"
               >
                 {item}
               </div>

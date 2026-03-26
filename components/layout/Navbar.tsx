@@ -116,7 +116,7 @@ const Navbar = () => {
 
                             {/* Mobile Menu */}
                             <button
-                                className="md:hidden text-blue-700"
+                                className="md:hidden text-blue-600"
                                 onClick={() => setIsMobileMenuOpen(true)}
                             >
                                 <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
