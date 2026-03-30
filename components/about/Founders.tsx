@@ -43,7 +43,7 @@ const Founders = () => {
           <div className="bg-gray-950 p-8 rounded-2xl shadow-lg text-center border border-blue-300">
             <div className="relative w-32 h-32 mx-auto mb-6 rounded-full overflow-hidden ">
               <Image
-                src="/pictures/Hannan Asif.png"
+                src="/pictures/Hannan.png"
                 alt="Abdul Hannan Asif"
                 fill
                 className="object-cover"
