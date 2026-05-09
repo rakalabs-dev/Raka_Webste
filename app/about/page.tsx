@@ -8,7 +8,7 @@ export default function AboutPage() {
   return (
     <>
       <AboutHero/>
-      <Founders />
+      {/* <Founders /> */}
       <Mission />
       <VisionPhilosophy />
       <Values />

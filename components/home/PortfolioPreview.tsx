@@ -5,7 +5,7 @@ import { projects } from "@/app/data/projects";
 export default function PortfolioPreview() {
   return (
     <section className="py-20 relative">
-      <div className="max-w-8xl mx-4 px-6 py-8 border border-blue-200 rounded-lg bg-gray-900/60">
+      <div className="max-w-8xl mx-4 px-6 py-8 ">
 
         {/* Heading */}
         <div className="text-center mb-14">

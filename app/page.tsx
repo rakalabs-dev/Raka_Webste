@@ -13,10 +13,11 @@ export default function Home() {
     <div className="relative">
       {/* ===== Full-page Sphere Background with image ===== */}
       <div 
-        className="fixed inset-0 z-0 pointer-events-none bg-cover bg-center"
-        style={{ backgroundImage: "url('/pictures/HomePage/home.png')" }}
+        className="fixed inset-0 z-0 pointer-events-none bg-black"
+        
       >
-        <SphereModel />
+        {/* bg-gradient-to-br from-blue-900 via-blue-950 to-black" */}
+
       </div>
 
       {/* ===== Foreground Content ===== */}

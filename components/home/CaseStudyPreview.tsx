@@ -23,7 +23,7 @@ const caseStudies = [
 const CaseStudyPreview = () => {
   return (
     <section className="py-20 relative">
-      <div className="max-w-8xl py-10 mx-4 lg:mx-8 px-4 sm:px-6 lg:px-8 border border-blue-200 rounded-lg bg-gray-900/60">
+      <div className="max-w-8xl py-10 mx-4 lg:mx-8 px-4 sm:px-6 lg:px-8  ">
 
         {/* Heading */}
         <div className="text-center mb-16 ">

@@ -70,7 +70,7 @@ const Hero = () => {
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="border mt-6 lg:mt-8 border-blue-200 rounded-lg py-8 px-3 lg:px-6  bg-gray-900/60"
+            className="border mt-6 lg:mt-8 rounded-lg py-8 px-3 lg:px-6  bg-gray-900/50"
           >
             <motion.h1
               variants={slideInLeft}
@@ -84,10 +84,7 @@ const Hero = () => {
               variants={slideInLeft}
               className="text-base md:text-lg xl:text-xl text-neutral-200 mb-8 leading-relaxed"
             >
-              At Raka, we help businesses eliminate inefficiencies and scale faster with
-              AI-driven workflows, CRM optimization, and smart automation. We build systems
-              that run seamlessly—giving your business the strength, clarity, and independence
-              to grow in a competitive market.
+              At RAKA LABS, we help service businesses streamline operations through intelligent automation, AI-powered workflows, and operational systems that reduce manual work, improve efficiency, and support scalable growth.
             </motion.p>
 
             <motion.div

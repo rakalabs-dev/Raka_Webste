@@ -52,7 +52,7 @@ const Benefits = () => {
 
           {/* Content */}
           <div>
-            <h2 className="font-heading text-3xl md:text-4xl text-white font-bold mb-8 leading-tight tracking-tight border border-blue-200 rounded-lg bg-gray-900/60 p-4 text-center">
+            <h2 className="font-heading text-3xl md:text-4xl text-white font-bold mb-8 leading-tight tracking-tight  p-4 text-center">
               Why Businesses Choose <span className="text-blue-600">
               Raka Labs
             </span>

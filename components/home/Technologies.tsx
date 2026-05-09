@@ -93,7 +93,7 @@ const Technologies = () => {
 
         {/* Heading */}
         <div className="w-full flex justify-center px-4 lg:px-5">
-          <div className="text-center mb-16 border border-blue-200 rounded-lg py-6 px-4 lg:px-8 bg-gray-900/60 max-w-4xl w-full">
+          <div className="text-center mb-16  rounded-lg py-6 px-4 lg:px-8 max-w-4xl w-full">
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-4">
               Cutting-Edge <span className="text-blue-500">Technologies</span>
             </h2>
@@ -118,10 +118,9 @@ const Technologies = () => {
         </div>
 
         {/* Bottom Statement */}
-        <div className="mt-20 sm:px-2 px-4 py-3 text-center border border-blue-200 rounded-lg bg-gray-900/60">
+        <div className="mt-20 sm:px-2 px-4 py-3 text-center  rounded-lg ">
           <p className="text-gray-200 text-sm md:text-lg leading-relaxed max-w-4xl mx-auto">
-            Harness the power of{" "}
-            <span className="font-semibold text-blue-500">latest programming languages</span>,{" "}
+            Harness the power of latest programming languages, {" "}
             <span className="font-semibold text-blue-500">AI frameworks</span>,{" "}
             <span className="font-semibold text-blue-500">automation platforms</span>, and{" "}
             <span className="font-semibold text-blue-500">cloud infrastructure</span> to build{" "}
