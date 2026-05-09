@@ -12,12 +12,13 @@ const caseStudies = [
     href: "/case-studies/ev-crm-automation",
   },
   {
-    category: "E-Commerce",
-    title: "Automated Lead Nurturing & CRM Optimization",
+    category: "EV Infrastructure",
+    title: "End-to-End EV Auto Quote & CRM Automation System",
     description:
-      "Implemented AI-driven workflows to boost customer engagement, improve lead conversion by 60%, and blueuce repetitive manual tasks.",
-    href: "/case-studies/ecommerce-automation",
-  },
+      "Raka built a fully automated EV Auto Quote system by integrating CRM, payments, invoicing, and installer scheduling into a unified workflow, reducing manual workload by 70% and enabling real-time operational visibility.",
+    href: "/case-studies/ev-autoquote",
+  }
+
 ];
 
 const CaseStudyPreview = () => {
