@@ -4,7 +4,7 @@ import { projects } from "@/app/data/projects";
 
 export default function PortfolioPage() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-950 to-black py-16 px-6">
+    <div className="min-h-screen bg-black py-16 px-6">
       <div className="max-w-8xl mx-auto">
 
         <h1 className="text-4xl font-bold text-blue-600 mb-4 text-center">

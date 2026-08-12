@@ -76,15 +76,14 @@ const Hero = () => {
               variants={slideInLeft}
               className="tracking-tight font-bold leading-tight font-heading text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl text-gray-100 mb-6"
             >
-              Build a <span className="text-blue-500">Stronger Business</span> with Intelligent{" "}
-              <span className="text-blue-500">Automation</span> and <span className="text-blue-500">Tech</span> Solutions
+              Building the Digital Systems Powering the <span className="font-heading font-semibold text-blue-500">Future of EV</span>{" "}  & <span className="font-heading font-semibold text-blue-500">Renewable Energy</span>{" "}
             </motion.h1>
 
             <motion.p
               variants={slideInLeft}
               className="text-base md:text-lg xl:text-xl text-neutral-200 mb-8 leading-relaxed"
             >
-              At RAKA LABS, we help service businesses streamline operations through intelligent automation, AI-powered workflows, and operational systems that reduce manual work, improve efficiency, and support scalable growth.
+             RAKA LABS builds intelligent systems that automate workflows, connect your tools, and help EV charging & renewable-energy businesses scale faster—with less manual work.
             </motion.p>
 
             <motion.div

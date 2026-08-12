@@ -58,21 +58,6 @@ const slideUp: Variants = {
 const ServicesOverview = () => {
   const services = [
     {
-      title: "Full Stack Web Solutions",
-      description: (
-        <>
-          Build high-performance business websites and web apps that improve user experience and increase conversions by{" "}
-          <span className="font-semibold text-blue-500">40%+</span>.
-        </>
-      ),
-      icon: (
-        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
-        </svg>
-      ),
-      href: "/services#full-stack-web-solutions",
-    },
-    {
       title: "Business Automation",
       description: (
         <>
@@ -86,6 +71,7 @@ const ServicesOverview = () => {
       ),
       href: "/services#business-automation",
     },
+
     {
       title: "CRM Optimization",
       description: (
@@ -101,6 +87,24 @@ const ServicesOverview = () => {
       ),
       href: "/services#crm-optimization",
     },
+    
+    {
+      title: "Full Stack Web Solutions",
+      description: (
+        <>
+          Build high-performance business websites and web apps that improve user experience and increase conversions by{" "}
+          <span className="font-semibold text-blue-500">40%+</span>.
+        </>
+      ),
+      icon: (
+        <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M16 18l6-6-6-6M8 6l-6 6 6 6" />
+        </svg>
+      ),
+      href: "/services#full-stack-web-solutions",
+    },
+   
+   
     {
       title: "AI Chatbots for Business",
       description: (
