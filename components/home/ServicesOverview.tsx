@@ -61,7 +61,7 @@ const ServicesOverview = () => {
       title: "Business Automation",
       description: (
         <>
-          blueuce manual work by up to <span className="font-semibold text-blue-500">60%</span> and streamline daily operations with automated workflows.
+          Reduce manual work by up to <span className="font-semibold text-blue-500">60%</span> and streamline daily operations with automated workflows.
         </>
       ),
       icon: (
@@ -71,12 +71,11 @@ const ServicesOverview = () => {
       ),
       href: "/services#business-automation",
     },
-
     {
       title: "CRM Optimization",
       description: (
         <>
-          Increase customer retention and sales visibility with structublue CRM systems improving pipeline efficiency by{" "}
+          Increase customer retention and sales visibility with structured CRM systems improving pipeline efficiency by{" "}
           <span className="font-semibold text-blue-500">30%-40%</span>.
         </>
       ),
@@ -87,7 +86,6 @@ const ServicesOverview = () => {
       ),
       href: "/services#crm-optimization",
     },
-    
     {
       title: "Full Stack Web Solutions",
       description: (
@@ -103,13 +101,11 @@ const ServicesOverview = () => {
       ),
       href: "/services#full-stack-web-solutions",
     },
-   
-   
     {
       title: "AI Chatbots for Business",
       description: (
         <>
-          Provide instant customer support and lead qualification 24/7 and blueuce response time by{" "}
+          Provide instant customer support and lead qualification 24/7 and reduce response time by{" "}
           <span className="font-semibold text-blue-500">70%</span>.
         </>
       ),
@@ -118,83 +114,8 @@ const ServicesOverview = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 10h.01M12 10h.01M16 10h.01" />
         </svg>
       ),
-      href: "/services#ai-chatbots-for-business",}
-    // },
-    // {
-    //   title: "Mobile App Development",
-    //   description: (
-    //     <>
-    //       Build powerful, scalable mobile applications tailored to your business needs, delivering seamless user experiences and boosting engagement by{" "}
-    //       <span className="font-semibold text-blue-500">60%+</span>.
-    //     </>
-    //   ),
-    //   icon: (
-    //     <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 18h.01M8 4h8a2 2 0 012 2v12a2 2 0 01-2 2H8a2 2 0 01-2-2V6a2 2 0 012-2z" />
-    //     </svg>
-    //   ),
-    //   href: "/services#mobile-app-development",
-    // },
-    // {
-    //   title: "Fintech Solutions",
-    //   description: (
-    //     <>
-    //       Develop secure and scalable financial technology solutions, streamlining payments, transactions, and operations while increasing efficiency by{" "}
-    //       <span className="font-semibold text-blue-500">2×</span>.
-    //     </>
-    //   ),
-    //   icon: (
-    //     <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8c-1.657 0-3 .895-3 2s1.343 2 3 2 3 .895 3 2-1.343 2-3 2m0-10v12m-7-6h14" />
-    //     </svg>
-    //   ),
-    //   href: "/services#fintech-solutions",
-    // },
-    // {
-    //   title: "Cybersecurity Services",
-    //   description: (
-    //     <>
-    //       Protect your digital assets with advanced security solutions, preventing threats and ensuring data integrity while reducing risks by{" "}
-    //       <span className="font-semibold text-blue-500">70%+</span>.
-    //     </>
-    //   ),
-    //   icon: (
-    //     <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 11c0-1.105.895-2 2-2s2 .895 2 2-.895 2-2 2-2-.895-2-2zm0 0V7m0 4v6m-6-6a6 6 0 1112 0c0 7-6 9-6 9s-6-2-6-9z" />
-    //     </svg>
-    //   ),
-    //   href: "/services#cybersecurity-services",
-    // },
-    // {
-    //   title: "Custom SaaS Development",
-    //   description: (
-    //     <>
-    //       Build tailored SaaS products designed to scale your business, automate workflows, and enhance productivity with solutions improving efficiency by{" "}
-    //       <span className="font-semibold text-blue-500">3×</span>.
-    //     </>
-    //   ),
-    //   icon: (
-    //     <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 15a4 4 0 014-4h1V7a4 4 0 118 0v4h1a4 4 0 014 4v1H3v-1z" />
-    //     </svg>
-    //   ),
-    //   href: "/services#custom-saas-development",
-    // },
-    // {
-    //   title: "Data Analytics",
-    //   description: (
-    //     <>
-    //       Transform raw data into actionable insights with advanced analytics solutions, enabling smarter decisions and driving growth by{" "}
-    //       <span className="font-semibold text-blue-500">40%+</span>.
-    //     </>
-    //   ),
-    //   icon: (
-    //     <svg className="w-6 h-6 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-    //       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M11 3v18M6 8v13M16 13v8M21 10v11" />
-    //     </svg>
-    //   ),
-    //   href: "/services#data-analytics",
-    // },
+      href: "/services#ai-chatbots-for-business",
+    },
   ];
 
   return (
@@ -235,10 +156,7 @@ const ServicesOverview = () => {
           {services.map((service, index) => (
             <motion.div key={index} variants={slideUp} className="h-full">
               <Link href={service.href} className="block h-full">
-                <div className="border border-blue-400/50 bg-black/40 p-8 rounded-lg h-full flex flex-col 
-shadow-[0_10px_30px_rgba(59,130,246,0.25)] 
-hover:shadow-[0_20px_50px_rgba(59,130,246,0.5)] 
-transform hover:scale-105 transition duration-300">
+                <div className="border border-blue-400/50 bg-black/40 p-8 rounded-lg h-full flex flex-col shadow-[0_10px_30px_rgba(59,130,246,0.25)] hover:shadow-[0_20px_50px_rgba(59,130,246,0.5)] transform hover:scale-105 transition duration-300">
 
                   <div className="w-12 h-12 bg-blue-100 flex items-center justify-center mb-6 rounded-md">
                     {service.icon}

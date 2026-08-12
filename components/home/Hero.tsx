@@ -1,19 +1,8 @@
 "use client";
 
 import Image from "next/image";
-import { motion, Variants } from "framer-motion";
-import dynamic from "next/dynamic";
 import Link from "next/link";
-import SphereModel from "./SphereModel";
-
-// Import 3D Model (disable SSR)
-const RakaModel = dynamic(() => import("./RicilixModel"), {
-  ssr: false,
-});
-
-/* =========================
-   Animation Variants
-========================= */
+import { motion, Variants } from "framer-motion";
 
 const containerVariants: Variants = {
   hidden: {},
@@ -54,134 +43,117 @@ const slideInRight: Variants = {
   },
 };
 
-const Hero = () => {
+export default function Hero() {
   return (
-    <section className="relative  py-4 md:py-8 xl:py-10">
-      {/* Sphere Background */}
-
-      <div className=" relative z-20  max-w-7xl xl:max-w-none md:py-6 py-4 mx-auto px-4 sm:px-6 lg:px-8 xl:px-16 2xl:px-24">
-
-        {/* ===== HERO GRID ===== */}
-        <div className="grid md:grid-cols-2 gap-10 xl:gap-16 2xl:gap-24 items-center">
-
-          {/* ================= TEXT SECTION ================= */}
+    <section className="relative py-4 md:py-8 xl:py-10">
+      <div className="relative z-20 mx-auto max-w-7xl xl:max-w-none px-4 py-4 md:py-6 sm:px-6 lg:px-8 xl:px-16 2xl:px-24">
+        <div className="grid items-center gap-10 md:grid-cols-2 xl:gap-16 2xl:gap-24">
+          {/* Left */}
           <motion.div
             variants={containerVariants}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="border mt-6 lg:mt-8 rounded-lg py-8 px-3 lg:px-6  bg-gray-900/50"
+            className="mt-6 rounded-lg border bg-gray-900/50 px-3 py-8 lg:mt-8 lg:px-6"
           >
             <motion.h1
               variants={slideInLeft}
-              className="tracking-tight font-bold leading-tight font-heading text-3xl md:text-4xl xl:text-4xl 2xl:text-5xl text-gray-100 mb-6"
+              className="mb-6 font-heading text-3xl font-bold leading-tight tracking-tight text-gray-100 md:text-4xl xl:text-4xl 2xl:text-5xl"
             >
-              Building the Digital Systems Powering the <span className="font-heading font-semibold text-blue-500">Future of EV</span>{" "}  & <span className="font-heading font-semibold text-blue-500">Renewable Energy</span>{" "}
+              Building the Digital Systems Powering the{" "}
+              <span className="font-semibold text-blue-500">
+                Future of EV
+              </span>{" "}
+              &{" "}
+              <span className="font-semibold text-blue-500">
+                Renewable Energy
+              </span>
             </motion.h1>
 
             <motion.p
               variants={slideInLeft}
-              className="text-base md:text-lg xl:text-xl text-neutral-200 mb-8 leading-relaxed"
+              className="mb-8 text-base leading-relaxed text-neutral-200 md:text-lg xl:text-xl"
             >
-             RAKA LABS builds intelligent systems that automate workflows, connect your tools, and help EV charging & renewable-energy businesses scale faster—with less manual work.
+              RAKA LABS builds intelligent systems that automate workflows,
+              connect your tools, and help EV charging and renewable energy
+              businesses scale faster with less manual work.
             </motion.p>
 
             <motion.div
               variants={slideInLeft}
-              className="flex flex-col sm:flex-row gap-4"
+              className="flex flex-col gap-4 sm:flex-row"
             >
-              <Link href="/contact">
-                <button className="bg-blue-700 cursor-pointer font-bold text-gray-100 px-8 py-3 rounded-lg hover:bg-blue-600 transition shadow-custom">
-                  Lets Start Now →
-                </button>
+              <Link
+                href="/contact"
+                className="rounded-lg bg-blue-700 px-8 py-3 text-center font-bold text-gray-100 transition hover:bg-blue-600 shadow-custom"
+              >
+                Let's Start Now →
               </Link>
             </motion.div>
           </motion.div>
 
-          {/* ================= IMAGE SECTION ================= */}
+          {/* Right */}
           <motion.div
             variants={slideInRight}
             initial="hidden"
             whileInView="visible"
             viewport={{ once: true, amount: 0.3 }}
-            className="relative h-[320px] md:h-[380px] xl:h-[420px] w-full
-             rounded-xl
-             shadow-[0_10px_30px_rgba(59,130,246,0.5)]  // blue shadow
-             bg-black/40" // semi-transparent overlay to see behind
+            className="relative h-[320px] w-full rounded-xl bg-black/40 shadow-[0_10px_30px_rgba(59,130,246,0.5)] md:h-[380px] xl:h-[420px]"
           >
             <Image
               src="/pictures/HomePage/home11.png"
               alt="Business Automation"
               fill
-              className="rounded-xl object-cover opacity-90" // slightly transparent
               priority
+              className="rounded-xl object-cover opacity-90"
             />
           </motion.div>
-        </div><div className="w-full flex justify-center items-center mt-10">
-          <div className="relative bg-black/40 lg:w-2/3 backdrop-blur-md border border-blue-500 shadow-lg rounded-2xl p-5 md:p-8">
+        </div>
 
-            {/* ================= LOGO ================= */}
+        {/* Bottom Card */}
+        <div className="mt-10 flex w-full justify-center">
+          <div className="relative w-full rounded-2xl border border-blue-500 bg-black/40 p-5 shadow-lg backdrop-blur-md lg:w-2/3 md:p-8">
             <motion.div
-              className="m-4 md:m-6 flex justify-center"
+              className="m-4 flex justify-center md:m-6"
               variants={slideInLeft}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
             >
-              <div
-                className="
-    relative
-    w-[300px] h-[130px]
-    sm:w-[380px] sm:h-[170px]
-    md:w-[560px] md:h-[250px]
-    lg:w-[720px] lg:h-[320px]
-    xl:w-[860px] xl:h-[380px]
-    2xl:w-[950px] 2xl:h-[420px]
-  "
-              >
+              <div className="relative h-[130px] w-[300px] sm:h-[170px] sm:w-[380px] md:h-[250px] md:w-[560px] lg:h-[320px] lg:w-[720px] xl:h-[380px] xl:w-[860px] 2xl:h-[420px] 2xl:w-[950px]">
                 <Image
                   src="/pictures/HomePage/Logo1.png"
-                  alt="Raka Logo"
+                  alt="Raka Labs"
                   fill
-                  className="object-contain"
                   priority
+                  className="object-contain"
                 />
               </div>
             </motion.div>
 
-            {/* ================= STATS ================= */}
             <motion.div
-              className="mt-4 text-center"
               variants={containerVariants}
               initial="hidden"
               whileInView="visible"
               viewport={{ once: true, amount: 0.3 }}
+              className="mt-4 text-center"
             >
               <motion.p
                 variants={slideInLeft}
-                className="text-sm md:text-base text-gray-300 font-medium"
+                className="text-sm font-medium text-gray-300 md:text-base"
               >
-                <span className="font-heading font-semibold text-blue-500">60%</span>{" "}
-                Less Manual Work •{" "}
-                <span className="font-heading font-semibold text-blue-500">40%</span>{" "}
-                Better Pipeline Visibility •{" "}
-                <span className="font-heading font-semibold text-blue-500">2× Faster Operations</span>
+                <span className="font-semibold text-blue-500">60%</span> Less
+                Manual Work •{" "}
+                <span className="font-semibold text-blue-500">40%</span> Better
+                Pipeline Visibility •{" "}
+                <span className="font-semibold text-blue-500">
+                  2× Faster Operations
+                </span>
               </motion.p>
             </motion.div>
           </div>
         </div>
-
       </div>
-
-      {/* ===== 3D MODEL (Optional) ===== */}
-      {/* 
-      <div className="mt-6 w-full">
-        <RakaModel />
-      </div> 
-      */}
-
     </section>
   );
-};
-
-export default Hero;
+}
